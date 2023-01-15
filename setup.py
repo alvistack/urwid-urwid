@@ -39,13 +39,15 @@ exec(open(os.path.join("urwid","version.py")).read())
 release = __version__
 
 setup_d = {
-    'name':"urwid",
+    'name':"urwid-mitmproxy",
     'version':release,
     'author':"Ian Ward",
     'author_email':"ian@excess.org",
+    'maintainer':'Maximilian Hils',
+    'maintainer_email':'pypi@maximilianhils.com',
     'ext_modules':[Extension('urwid.str_util', sources=['source/str_util.c'])],
     'packages':['urwid', 'urwid.tests'],
-    'url':"http://urwid.org/",
+    'url':'https://github.com/mitmproxy/urwid-mitmproxy',
     'license':"LGPL",
     'keywords':"curses ui widget scroll listbox user interface text layout console ncurses",
     'platforms':"unix-like",
