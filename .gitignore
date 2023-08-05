@@ -283,7 +283,6 @@ MANIFEST
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
-*.spec
 
 # Installer logs
 pip-log.txt
@@ -448,7 +447,7 @@ GitHub.sublime-settings
 ### GPG template
 secring.*
 
-# Generated version
-/urwid/version.py
 # Built packages
 /wheelhouse
+
+.pybuild/

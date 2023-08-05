@@ -1,0 +1,5 @@
+python-urwid (100:2.1.2+20230718.237d1275-1) UNRELEASED; urgency=medium
+
+  * https://github.com/urwid/urwid/commit/237d12751dabbee1f224e5a99017767ac29bce77
+
+ -- Wong Hoi Sing Edison <hswong3i@pantarei-design.com>  Sat, 05 Aug 2023 11:56:02 +0800

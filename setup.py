@@ -26,6 +26,7 @@ from setuptools import Extension, setup
 
 setup_d = {
     'name': "urwid",
+    'version': "2.1.3.dev0",
     'ext_modules': [Extension('urwid.str_util', sources=['source/str_util.c'])],
     'url': "https://urwid.org/",
     'test_suite': 'urwid.tests',
