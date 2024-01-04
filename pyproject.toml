@@ -3,20 +3,20 @@
 # PEP 508 specifications for PEP 518.
 requires = [
     "setuptools >= 61.0.0",
-    "setuptools_scm[toml]>=7.0",
     "wheel",
 ]
 build-backend="setuptools.build_meta"
 
 [project]
 name = "urwid"
+version = "2.4.1"
 description = "A full-featured console (xterm et al.) user interface library"
 requires-python = ">=3.7.0"
 keywords = ["curses", "ui", "widget", "scroll", "listbox", "user interface", "text layout", "console", "ncurses"]
 license={text="LGPL-2.1-only"}  # Use SPDX classifier
 readme = {file = "README.rst", content-type = "text/x-rst"}
 authors=[{name="Ian Ward", email="ian@excess.org"}]
-dynamic = ["classifiers", "version"]  # "dependencies",
+dynamic = ["classifiers"]  # "dependencies",
 
 [project.urls]
 "Homepage" = "https://urwid.org/"
@@ -57,9 +57,6 @@ lcd = ["pyserial"]
 
 [tool.distutils.bdist_wheel]
 universal = 0
-
-[tool.setuptools_scm]
-write_to = "urwid/version.py"
 
 [tool.cibuildwheel]
 # Disable building PyPy wheels on all platforms
