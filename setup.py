@@ -23,11 +23,11 @@ from setuptools import setup
 
 setup(
     name="urwid",
+    version="2.6.5",
     url="https://urwid.org/",
     python_requires=">3.7",
     setup_requires=[
         "setuptools >= 61.0.0",
-        "setuptools_scm[toml]>=7.0",
         "wheel",
     ],
 )
