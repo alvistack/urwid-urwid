@@ -27,7 +27,6 @@ setup(
     python_requires=">3.7",
     setup_requires=[
         "setuptools >= 61.0.0",
-        "setuptools_scm[toml]>=7.0",
         "wheel",
     ],
 )
