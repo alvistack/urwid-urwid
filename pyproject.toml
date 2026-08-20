@@ -4,18 +4,17 @@ build-backend = "setuptools.build_meta"
 # PEP 508 specifications for PEP 518.
 requires = [
   "setuptools>=80.8.0",
-  "setuptools-scm[toml]>=8.1.0",
 ]
 
 [project]
 name = "urwid"
+version = "4.0.11"
 description = "A full-featured console (xterm et al.) user interface library"
 readme = { file = "README.rst", content-type = "text/x-rst" }
 keywords = [ "console", "curses", "listbox", "ncurses", "scroll", "text layout", "ui", "user interface", "widget" ]
-license = "LGPL-2.1-only"  # Use SPDX classifier
-license-files = [ "COPYING" ]
+license = { text = "LGPL-2.1-only" }  # Use SPDX classifier
 requires-python = ">=3.9.0"
-dynamic = [ "classifiers", "dependencies", "version" ]
+dynamic = [ "classifiers", "dependencies" ]
 [[project.authors]]
 name = "Ian Ward"
 email = "ian@excess.org"
@@ -88,9 +87,6 @@ namespaces = false
 
 [tool.distutils.bdist_wheel]
 universal = 0
-
-[tool.setuptools_scm]
-write_to = "urwid/version.py"
 
 [tool.cibuildwheel]
 # Disable building PyPy wheels on all platforms
