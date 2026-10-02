@@ -1,0 +1,5 @@
+python-urwid source: file-without-copyright-information
+python-urwid source: no-debian-changes
+python-urwid source: source-contains-prebuilt-windows-binary
+python-urwid source: source-is-missing
+python-urwid source: source-package-encodes-python-version
